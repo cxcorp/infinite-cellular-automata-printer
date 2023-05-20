@@ -3,11 +3,12 @@ Make your terminal rain with an infinite [cellular automaton](https://mathworld.
 
 ## Running
 
-Just run `node src/index.js WIDTH [RULE]`. RULE defaults to 126 because it's pretty. Other interesting rules include:
-- 110
+Download `src/index.js` and just run `node index.js WIDTH [RULE]`. RULE defaults to 126 because it's pretty. Other interesting rules include:
+- 110 (it's Turing complete[^1])
 - 146
 - 150
 - 182
+- 184 (can be used as a simple traffic flow model for a single highway lane??[^2] like what??)
 
 ## Example
 `node src/index.js 80 126` will produce:
@@ -141,3 +142,6 @@ Just run `node src/index.js WIDTH [RULE]`. RULE defaults to 126 because it's pre
 ████  ██ ████      ████      ██  ████████  ███████  ██    ████  ████   ██████  █
 █  ███████  ██    ██  ██    ██████      ████     ██████  ██  ████  ██ ██    ████
 ```
+
+[^1]: https://en.wikipedia.org/wiki/Rule_110
+[^2]: https://en.wikipedia.org/wiki/Rule_184
